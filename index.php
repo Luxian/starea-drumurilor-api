@@ -43,6 +43,7 @@ $first_div = false;
 foreach($body->childNodes as $element) {
     if ($element->nodeName == 'div') {
         $first_div = $element;
+        break;
     }
 }
 if (!$first_div) {
